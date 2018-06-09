@@ -58,6 +58,15 @@ function handleText(message, replyToken, source) {
 }
 
 
+// simple reply function
+const replyText = (token, texts) => {
+  texts = Array.isArray(texts) ? texts : [texts];
+  return client.replyMessage(
+    token,
+    texts.map((text) => ({ type: 'text', text }))
+  );
+};
+
 // listen on port
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
