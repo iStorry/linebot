@@ -1,0 +1,17 @@
+{
+  "name": "linebot",
+  "version": "1.0.0",
+  "description": "a test bot",
+  "main": "index.js",
+  "dependencies": {
+    "@line/bot-sdk": "^6.0.2",
+    "express": "^4.16.3",
+    "linebot": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Jatin",
+  "license": "ISC"
+}
